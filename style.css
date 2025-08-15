@@ -1,0 +1,206 @@
+/* COMMON STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f2f2f2;
+  font-family: 'roboto', sans-serif;
+}
+
+.cardStyle1,
+.cardStyle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h4 {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+p {
+  font-size: 0.5rem;
+  line-height: 1.1rem;
+  color: white;
+  margin: 10px 0;
+}
+
+/* style1 cards' CSS */
+.cardStyle1 .btn {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 0.4rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cardStyle1 .btn:hover {
+  transform: scale(1.1);
+}
+
+.cardStyle1 .card {
+  border: none;
+  border-radius: 10px;
+  padding: 30px 20px;
+  height: 180px;
+  width: 280px;
+  margin: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cardStyle1 .card1 {
+  background-image: linear-gradient(
+      to bottom right,
+      rgb(83, 77, 255),
+      rgba(220, 145, 253, 0.4)
+    ),
+    url('./wechat_2025-08-15_104844_183.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cardStyle1 .card2 {
+  background-image: linear-gradient(
+      to bottom right,
+      rgb(55, 141, 253),
+      rgba(145, 253, 221, 0.4)
+    ),
+    url('./wechat_2025-08-15_104936_132.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* style2 cards' common CSS */
+.cardStyle2 .card {
+  border: none;
+  border-radius: 10px;
+  padding: 20px 20px;
+  height: 180px;
+  width: 280px;
+  margin: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cardStyle2 .card-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cardStyle2 .card-header-left {
+  display: flex;
+}
+
+.cardStyle2 .avater {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardStyle2 .info {
+  line-height: 12px;
+}
+
+.cardStyle2 .name {
+  font-size: 0.6rem;
+  margin-top: 5px;
+}
+
+.cardStyle2 .position {
+  font-size: 0.4rem;
+}
+
+.cardStyle2 a {
+  margin-left: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cardStyle2 a:focus {
+  color: orange;
+}
+
+.cardStyle2 a:hover {
+  font-size: 0.6rem;
+  /* transform: scale(1.1); */
+}
+
+.cardStyle2 .card-header-right {
+  font-size: 0.5rem;
+  border: none;
+  margin-top: 0;
+}
+
+/* style2 card3' CSS */
+.cardStyle2 .card3 {
+  background-color: rgb(234, 234, 234);
+}
+
+.cardStyle2 .card3,
+.cardStyle2 .card3 p {
+  color: black;
+}
+
+.cardStyle2 .card3 .far {
+  color: orange;
+}
+
+.cardStyle2 .card3 .info .position a {
+  color: rgb(86, 155, 234);
+}
+
+.cardStyle2 .avater.avater-card3 {
+  background-image: url('./wechat_2025-08-15_105822_656.jpg');
+  /* z-index: 100; */
+}
+
+/* style2 card4' CSS */
+.cardStyle2 .card4 .info .position a {
+  color: #fff;
+}
+
+.cardStyle2 .avater.avater-card4 {
+  background-image: url('./wechat_2025-08-15_105844_801.jpg');
+  /* z-index: 100; */
+}
+
+.cardStyle2 .card4 {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(114, 110, 248),
+    rgb(229, 214, 251)
+  );
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 600px) {
+  .cardStyle1,
+  .cardStyle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
