@@ -22,6 +22,22 @@ body {
   color: white;
 }
 
+.cardStyle1 .card,
+.cardStyle2 .card {
+  border: none;
+  border-radius: 10px;
+  height: 180px;
+  width: 280px;
+  margin: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.cardStyle1 .card:hover,
+.cardStyle2 .card:hover {
+  transform: translateY(-5px);
+}
+
 h4 {
   font-size: 1.2rem;
   letter-spacing: 0.5px;
@@ -53,13 +69,7 @@ p {
 }
 
 .cardStyle1 .card {
-  border: none;
-  border-radius: 10px;
   padding: 30px 20px;
-  height: 180px;
-  width: 280px;
-  margin: 10px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .cardStyle1 .card1 {
@@ -86,13 +96,7 @@ p {
 
 /* style2 cards' common CSS */
 .cardStyle2 .card {
-  border: none;
-  border-radius: 10px;
   padding: 20px 20px;
-  height: 180px;
-  width: 280px;
-  margin: 10px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .cardStyle2 .card-header {
